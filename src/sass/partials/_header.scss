@@ -1,0 +1,17 @@
+$class: header;
+
+.#{$class} {
+  background-color: red;
+  color: white;
+  position: sticky;
+  top: 0;
+
+  &__wrapper {
+    @extend .container;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+}

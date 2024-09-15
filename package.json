@@ -1,0 +1,24 @@
+{
+  "name": "w2d2-dom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+"scripts": {
+    "html": "live-server src --open=pages/index.html --port=3000 --verbose",
+    "server": "json-server server/data.json --port=3005",
+    "sass": "sass --watch src/sass/index.scss:src/css/index.css", 
+    "dev": "concurrently 'npm run server' 'npm run html' 'npm run sass'", 
+    "static": "live-server src --open=pages/index.static.html --port=3001 --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.30",
+    "concurrently": "^8.2.2",
+    "json-server": "^1.0.0-alpha.23",
+    "live-server": "^1.2.2",
+    "sass": "^1.78.0"
+  }
+}
